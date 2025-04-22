@@ -1,7 +1,8 @@
 function toRad(value) {
   return (value * Math.PI) / 180;
 }
-
+//Havershine formula
+// https://en.wikipedia.org/wiki/Haversine_formula
 function calculateDistance(lat1, lng1, lat2, lng2) {
   const R = 6371;
   const dLat = toRad(lat2 - lat1);
